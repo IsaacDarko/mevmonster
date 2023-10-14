@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000 ;
 
 
 const startMonitoring = () => {
-  const POLLING_INTERVAL = process.env.POLLING_INTERVAL || 3000;
+  const POLLING_INTERVAL = process.env.POLLING_INTERVAL || 2000;
   setInterval(async () => {
     await monitorPrice();
   }, POLLING_INTERVAL);
